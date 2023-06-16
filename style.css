@@ -1,0 +1,53 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "Delicious Handrawn", cursive;
+  src: url(https://fonts.googleapis.com/css2?family=Delicious+Handrawn&display=swap);
+}
+
+@font-face {
+  font-family: "Nunito", sans-serif;
+  src: url(https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap);
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Delicious Handrawn", cursive;
+}
+
+h4,
+h5,
+h6,
+p {
+  font-family: "Nunito", sans-serif;
+}
+
+@media (width <= 768px) {
+  header {
+    background-color: blue;
+    height: 6svh;
+  }
+  #name-section {
+    background-color: mediumvioletred;
+    height: 70svh;
+  }
+  #icons-section {
+    background-color: yellowgreen;
+    height: 24svh;
+  }
+  #descriptions-section {
+    background-color: firebrick;
+  }
+  #contact-section {
+    background-color: seagreen;
+  }
+  footer {
+    background-color: crimson;
+    height: 3vh;
+  }
+}
