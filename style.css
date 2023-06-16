@@ -14,9 +14,15 @@
   src: url(https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap);
 }
 
+:root {
+  --logo-color: #9a0101;
+  --text-color: #fdf0d5;
+}
+
 h1,
 h2,
-h3 {
+h3,
+a {
   font-family: "Delicious Handrawn", cursive;
 }
 
@@ -27,13 +33,48 @@ p {
   font-family: "Nunito", sans-serif;
 }
 
+a {
+  text-decoration: none;
+  color: var(--text-color);
+}
+
+body {
+  position: absolute;
+  background-image: url(/assets/images/background.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
 @media (width <= 768px) {
-  header {
-    background-color: blue;
-    height: 6svh;
+  body {
+    background-image: url(/assets/images/phone-background.jpg);
   }
+  header {
+    background-color: var(--logo-color);
+    height: 7svh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: var(--text-color);
+  }
+  nav {
+    padding-right: 2px;
+  }
+  #nav-link {
+    padding-right: 13px;
+    font-size: 1.3rem;
+  }
+  #logo-header {
+    height: 40px;
+    padding-left: 15px;
+  }
+  #a-logo {
+    display: flex;
+    align-items: center;
+  }
+
   #name-section {
-    background-color: mediumvioletred;
     height: 70svh;
   }
   #icons-section {
