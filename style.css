@@ -116,7 +116,12 @@ body {
   }
 
   #descriptions-section {
-    background-color: var(--logo-color);
+  background-image: url(/assets/images/phone-background-2.jpg);
+  backdrop-filter: brightness(60%);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+    padding: 25px 0;
   }
 
   article{
