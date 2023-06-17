@@ -1,7 +1,6 @@
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
+:root {
+  --logo-color: #9a0101;
+  --text-color: #ffffff;
 }
 
 @font-face {
@@ -14,17 +13,20 @@
   src: url(https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap);
 }
 
-:root {
-  --logo-color: #9a0101;
-  --text-color: #ffffff;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  color: var(--text-color);
 }
+
+
 
 h1,
 h2,
 h3,
 a {
   font-family: "Delicious Handrawn", cursive;
-  color: var(--text-color)
 }
 
 h4,
@@ -36,7 +38,6 @@ p {
 
 a {
   text-decoration: none;
-  color: var(--text-color);
 }
 
 body {
@@ -58,7 +59,6 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    color: var(--text-color);
   }
   nav {
     padding-right: 2px;
@@ -105,6 +105,7 @@ body {
     background-repeat: repeat;
     background-size: 200px;
     height: 24svh;
+    font-size: 1.5em;
   }
   #icon-section{
     height: 100px;
@@ -115,7 +116,37 @@ body {
   }
 
   #descriptions-section {
-    background-color: firebrick;
+    background-color: var(--logo-color);
+  }
+
+  article{
+    padding: 10px;
+    display: flex;
+    align-items: center;
+  }
+
+  article h3{
+font-size: 3rem;
+padding: 0 10px
+  }
+  article p{
+    padding: 0 10px
+  }
+  article img { 
+    padding: 0 10px;
+  }
+
+  #text-article{
+    display: flex;
+    flex-direction: column;
+  }
+
+  #text-right-article{
+    text-align: end;
+  }
+
+  #article-image{
+    height: 10%;
   }
   #contact-section {
     background-color: seagreen;
