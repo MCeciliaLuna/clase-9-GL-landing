@@ -47,6 +47,7 @@ body {
   background-size: cover;
   background-position: center;
 }
+
 header {
   background-color: var(--logo-color);
   height: 7svh;
@@ -54,21 +55,26 @@ header {
   align-items: center;
   justify-content: space-between;
 }
+
 nav {
   padding-right: 0.5em;
 }
+
 #nav-link {
   padding-right: 0.5em;
   font-size: 1.5rem;
 }
+
 #logo-header {
   height: 5svh;
   padding-left: 0.5em;
 }
+
 #a-logo {
   display: flex;
   align-items: center;
 }
+
 #name-section {
   height: 73svh;
   display: flex;
@@ -77,6 +83,7 @@ nav {
   padding: 0 1em 0 1em;
   text-shadow: 1px 1px 4px rgba(0, 0, 0, 1);
 }
+
 #text-name-section {
   display: table-column;
 }
@@ -86,12 +93,12 @@ nav {
   width: 26.5svh;
 }
 
-#welcome-name-section{
+#welcome-name-section {
   font-size: 2.5rem;
 }
 
-#title-name-section{
-  font-size: 6rem
+#title-name-section {
+  font-size: 6rem;
 }
 
 #icons-section {
@@ -103,10 +110,12 @@ nav {
   background-size: 200px;
   height: 20svh;
 }
+
 #icon-section {
   height: 12svh;
   border-radius: 25%;
 }
+
 #text-icon-section {
   text-align: center;
   font-size: 1.5rem;
@@ -119,7 +128,10 @@ nav {
   background-size: cover;
   background-position: center;
   text-shadow: 1px 1px 4px rgba(0, 0, 0, 1);
-  padding: 2em 0;
+  padding: 4em 0;
+  display: flex;
+  justify-content: center;
+  /* flex-direction: column; */
 }
 
 article {
@@ -129,13 +141,24 @@ article {
 }
 
 article h3 {
-  padding: 0 0.5em;
+  padding: 0 0.3em;
+  font-size: 2rem;
 }
+
 article p {
   padding: 0 0.5em;
 }
+
 article img {
-  padding: 0 0.5em;
+  padding: 0 0.1em;
+}
+
+#enjoy-article {
+  flex-direction: row-reverse;
+}
+
+#enjoy-article {
+  text-align: end;
 }
 
 #text-article {
@@ -150,30 +173,37 @@ article img {
 #article-image {
   height: 15svh;
 }
+
 #contact-section {
   padding: 2em 0;
   background-image: url(/assets/images/pattern-background.png);
   display: flex;
   flex-direction: column;
 }
+
 #contact-section h3 {
   text-align: center;
   padding-bottom: 0.5em;
+  font-size: 2.5rem;
 }
+
 #icons-social-section {
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
   padding-bottom: 1em;
 }
+
 #icon-social {
-  width: 150%;
+  width: 9svh;
 }
 
 #map {
   border-radius: 5px;
   margin: 0 auto;
   box-shadow: 1px 1px 4px rgba(0, 0, 0, 1);
+  width: 60svh;
+  height: 30svh;
 }
 
 footer {
@@ -181,109 +211,170 @@ footer {
   text-align: center;
   padding: 1.5em 0;
 }
+
 footer p {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
+
 footer a {
   font-family: "Nunito";
 }
+
 #icon-footer {
   width: 1.5rem;
 }
 
-@media (width <= 767px){
-  body{
+@media (width <= 767px) {
+  body {
     background-image: url(/assets/images/phone-background.jpg);
     background-position: center;
   }
-  #logo-header{
+
+  #logo-header {
     height: 5.5svh;
   }
-  #nav-link{
+
+  #nav-link {
     font-size: 1.3rem;
   }
-  #name-section{
+
+  #name-section {
     height: 70svh;
   }
-  #welcome-name-section{
+
+  #welcome-name-section {
     font-size: 1.6rem;
   }
-  #title-name-section{
-    font-size:3.5rem
+
+  #title-name-section {
+    font-size: 3.5rem;
   }
-  #icons-section{
+
+  #logo-name-section {
+    width: 15svh;
+  }
+
+  #icons-section {
     justify-content: space-around;
     height: 24svh;
   }
-  #icons-section h3{
+
+  #icons-section h3 {
     font-size: 1.6rem;
   }
-  #icon-section{
+
+  #icon-section {
     height: 13.5svh;
   }
-  #descriptions-section{
+
+  #descriptions-section {
     background-image: url(/assets/images/phone-background-2.jpg);
+    flex-direction: column;
   }
-  article h3{
+
+  #article {
+    flex-direction: column;
+  }
+
+  #enjoy-article {
+    flex-direction: row;
+    text-align: start;
+  }
+
+  article h3 {
     font-size: 2rem;
   }
-  #contact-section h3{
+
+  article img {
+    padding: 0 0.5em;
+  }
+
+  #contact-section h3 {
     font-size: 2.2rem;
   }
+
   #icon-social {
     width: 7.5svh;
   }
+
+  #map {
+    width: 40svh;
+  }
 }
 
-@media (min-width: 768px) and (max-width: 1024px){
-  body{
+@media (min-width: 768px) and (max-width: 1024px) {
+  body {
     background-image: url(/assets/images/phone-background.jpg);
     background-position: center;
   }
-  #logo-header{
+
+  #logo-header {
     height: 5.4svh;
   }
-  #nav-link{
+
+  #nav-link {
     font-size: 1.7rem;
   }
-  #name-section{
+
+  #name-section {
     height: 70svh;
   }
-  #welcome-name-section{
+
+  #welcome-name-section {
     font-size: 2.5rem;
   }
-  #title-name-section{
-    font-size:5.5rem
+
+  #title-name-section {
+    font-size: 5.5rem;
   }
-  #icons-section{
+
+  #icons-section {
     justify-content: space-around;
     height: 24svh;
   }
-  #icons-section h3{
+
+  #icons-section h3 {
     font-size: 2.2rem;
   }
-  #icon-section{
+
+  #icon-section {
     height: 14svh;
   }
-  #descriptions-section{
+
+  #descriptions-section {
     background-image: url(/assets/images/phone-background-2.jpg);
+    flex-direction: column;
   }
-  article h3{
+
+  #enjoy-article {
+    flex-direction: row;
+    text-align: start;
+  }
+
+  article h3 {
     font-size: 2.5rem;
   }
-  article p{
-    font-size: 1.3rem
+
+  article p {
+    font-size: 1.3rem;
   }
-  #contact-section h3{
+
+  article img {
+    padding: 0 0.5em;
+  }
+
+  #contact-section h3 {
     font-size: 2.8rem;
   }
+
   #icon-social {
     width: 8svh;
   }
-  #map{
+
+  #map {
     width: 60svh;
     height: 30svh;
   }
