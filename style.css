@@ -45,6 +45,7 @@ body {
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
+  background-position: center;
 }
 header {
   background-color: var(--logo-color);
@@ -58,9 +59,10 @@ nav {
 }
 #nav-link {
   padding-right: 0.5em;
+  font-size: 1.5rem;
 }
 #logo-header {
-  height: 4.5svh;
+  height: 5svh;
   padding-left: 0.5em;
 }
 #a-logo {
@@ -68,7 +70,7 @@ nav {
   align-items: center;
 }
 #name-section {
-  height: 70svh;
+  height: 73svh;
   display: flex;
   align-items: center;
   justify-content: space-evenly;
@@ -81,17 +83,25 @@ nav {
 
 #logo-name-section {
   border-radius: 100%;
-  width: 18svh;
+  width: 26.5svh;
+}
+
+#welcome-name-section{
+  font-size: 2.5rem;
+}
+
+#title-name-section{
+  font-size: 6rem
 }
 
 #icons-section {
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-evenly;
   background-image: url(/assets/images/pattern-background.png);
   background-repeat: repeat;
   background-size: 200px;
-  height: 24svh;
+  height: 20svh;
 }
 #icon-section {
   height: 12svh;
@@ -99,13 +109,15 @@ nav {
 }
 #text-icon-section {
   text-align: center;
+  font-size: 1.5rem;
 }
 
 #descriptions-section {
-  background-image: url(/assets/images/background.jpg);
+  background-image: url(/assets/images/background-2.jpg);
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
+  background-position: center;
   text-shadow: 1px 1px 4px rgba(0, 0, 0, 1);
   padding: 2em 0;
 }
@@ -185,6 +197,7 @@ footer a {
 @media (width <= 767px){
   body{
     background-image: url(/assets/images/phone-background.jpg);
+    background-position: center;
   }
   #logo-header{
     height: 5.5svh;
@@ -192,11 +205,18 @@ footer a {
   #nav-link{
     font-size: 1.3rem;
   }
+  #name-section{
+    height: 70svh;
+  }
   #welcome-name-section{
     font-size: 1.6rem;
   }
   #title-name-section{
     font-size:3.5rem
+  }
+  #icons-section{
+    justify-content: space-around;
+    height: 24svh;
   }
   #icons-section h3{
     font-size: 1.6rem;
@@ -218,9 +238,10 @@ footer a {
   }
 }
 
-@media (min-width: 768px) and (max-width: 1200px){
+@media (min-width: 768px) and (max-width: 1024px){
   body{
     background-image: url(/assets/images/phone-background.jpg);
+    background-position: center;
   }
   #logo-header{
     height: 5.4svh;
@@ -228,11 +249,18 @@ footer a {
   #nav-link{
     font-size: 1.7rem;
   }
+  #name-section{
+    height: 70svh;
+  }
   #welcome-name-section{
     font-size: 2.5rem;
   }
   #title-name-section{
     font-size:5.5rem
+  }
+  #icons-section{
+    justify-content: space-around;
+    height: 24svh;
   }
   #icons-section h3{
     font-size: 2.2rem;
