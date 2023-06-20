@@ -40,7 +40,7 @@ a {
 }
 
 body {
-  background-image: url(/assets/images/phone-background.jpg);
+  background-image: url(/assets/images/background.jpg);
   backdrop-filter: brightness(60%);
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -54,15 +54,14 @@ header {
   justify-content: space-between;
 }
 nav {
-  padding-right: 2px;
+  padding-right: 0.5em;
 }
 #nav-link {
-  padding-right: 13px;
-  font-size: 1.3rem;
+  padding-right: 0.5em;
 }
 #logo-header {
-  height: 40px;
-  padding-left: 15px;
+  height: 4.5svh;
+  padding-left: 0.5em;
 }
 #a-logo {
   display: flex;
@@ -79,12 +78,7 @@ nav {
 #text-name-section {
   display: table-column;
 }
-#welcome-name-section {
-  font-size: 2rem;
-}
-#title-name-section {
-  font-size: 4rem;
-}
+
 #logo-name-section {
   border-radius: 100%;
   width: 18svh;
@@ -98,10 +92,9 @@ nav {
   background-repeat: repeat;
   background-size: 200px;
   height: 24svh;
-  font-size: 1.5em;
 }
 #icon-section {
-  height: 100px;
+  height: 12svh;
   border-radius: 25%;
 }
 #text-icon-section {
@@ -109,29 +102,28 @@ nav {
 }
 
 #descriptions-section {
-  background-image: url(/assets/images/phone-background-2.jpg);
+  background-image: url(/assets/images/background.jpg);
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
   text-shadow: 1px 1px 4px rgba(0, 0, 0, 1);
-  padding: 25px 0;
+  padding: 2em 0;
 }
 
 article {
-  padding: 10px;
+  padding: 0.5em;
   display: flex;
   align-items: center;
 }
 
 article h3 {
-  font-size: 3rem;
-  padding: 0 10px;
+  padding: 0 0.5em;
 }
 article p {
-  padding: 0 10px;
+  padding: 0 0.5em;
 }
 article img {
-  padding: 0 10px;
+  padding: 0 0.5em;
 }
 
 #text-article {
@@ -144,24 +136,23 @@ article img {
 }
 
 #article-image {
-  height: 10%;
+  height: 15svh;
 }
 #contact-section {
-  padding: 20px 0;
+  padding: 2em 0;
   background-image: url(/assets/images/pattern-background.png);
   display: flex;
   flex-direction: column;
 }
 #contact-section h3 {
   text-align: center;
-  font-size: 2rem;
-  padding-bottom: 10px;
+  padding-bottom: 0.5em;
 }
 #icons-social-section {
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
-  padding-bottom: 20px;
+  padding-bottom: 1em;
 }
 #icon-social {
   width: 15%;
@@ -176,7 +167,7 @@ article img {
 footer {
   background-color: var(--secondary-color);
   text-align: center;
-  padding: 25px 0;
+  padding: 1.5em 0;
 }
 footer p {
   display: flex;
@@ -189,4 +180,43 @@ footer a {
 }
 #icon-footer {
   width: 1.5rem;
+}
+
+@media (width <= 768px){
+  body{
+    background-image: url(/assets/images/phone-background.jpg);
+  }
+  #logo-header{
+    height: 5.5svh;
+  }
+  #nav-link{
+    font-size: 1.3rem;
+  }
+  #welcome-name-section{
+    font-size: 1.6rem;
+  }
+  #title-name-section{
+    font-size:3.5rem
+  }
+  #icons-section h3{
+    font-size: 1.6rem;
+  }
+  #icon-section{
+    height: 13.5svh;
+  }
+  article h3{
+    font-size: 2rem;
+  }
+  #contact-section h3{
+    font-size: 2.2rem;
+  }
+  #descriptions-section{
+    background-image: url(/assets/images/phone-background-2.jpg);
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1200px){
+  #descriptions-section{
+    background-image: url(/assets/images/phone-background-2.jpg);
+  }
 }
