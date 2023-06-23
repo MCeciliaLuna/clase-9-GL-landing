@@ -40,7 +40,7 @@ a {
 }
 
 body {
-  background-image: url(/assets/images/background.jpg);
+  background-image: url(/assets/images/background.webp);
   backdrop-filter: brightness(60%);
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -60,19 +60,19 @@ nav {
   padding-right: 0.5em;
 }
 
-#nav-link {
+header a {
   padding-right: 0.5em;
   font-size: 1.5rem;
 }
 
-#logo-header {
-  height: 5svh;
-  padding-left: 0.5em;
-}
-
-#a-logo {
+header div {
   display: flex;
   align-items: center;
+}
+
+header img {
+  height: 5.5svh;
+  padding-left: 0.5em;
 }
 
 #name-section {
@@ -84,20 +84,20 @@ nav {
   text-shadow: 1px 1px 4px rgba(0, 0, 0, 1);
 }
 
-#text-name-section {
+#name-section div {
   display: table-column;
 }
 
-#logo-name-section {
+#name-section img {
   border-radius: 100%;
-  width: 26.5svh;
+  width: 22svw;
 }
 
-#welcome-name-section {
+#name-section h3 {
   font-size: 2.5rem;
 }
 
-#title-name-section {
+#name-section h1 {
   font-size: 6rem;
 }
 
@@ -111,18 +111,18 @@ nav {
   height: 20svh;
 }
 
-#icon-section {
+#icons-section img {
   height: 12svh;
   border-radius: 25%;
 }
 
-#text-icon-section {
+#icons-section h3 {
   text-align: center;
   font-size: 1.5rem;
 }
 
 #descriptions-section {
-  background-image: url(/assets/images/background-2.jpg);
+  background-image: url(/assets/images/background-2.webp);
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
@@ -131,7 +131,6 @@ nav {
   padding: 4em 0;
   display: flex;
   justify-content: center;
-  /* flex-direction: column; */
 }
 
 article {
@@ -155,13 +154,10 @@ article img {
 
 #enjoy-article {
   flex-direction: row-reverse;
-}
-
-#enjoy-article {
   text-align: end;
 }
 
-#text-article {
+article div {
   display: flex;
   flex-direction: column;
 }
@@ -170,7 +166,7 @@ article img {
   text-align: end;
 }
 
-#article-image {
+article img {
   height: 15svh;
 }
 
@@ -187,22 +183,22 @@ article img {
   font-size: 2.5rem;
 }
 
-#icons-social-section {
+#contact-section section {
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
   padding-bottom: 1em;
 }
 
-#icon-social {
-  width: 9svh;
+#contact-section a {
+  width: 6svw;
 }
 
-#map {
+iframe {
   border-radius: 5px;
   margin: 0 auto;
   box-shadow: 1px 1px 4px rgba(0, 0, 0, 1);
-  width: 60svh;
+  width: 60svw;
   height: 30svh;
 }
 
@@ -223,21 +219,21 @@ footer a {
   font-family: "Nunito";
 }
 
-#icon-footer {
+footer img {
   width: 1.5rem;
 }
 
 @media (width <= 767px) {
   body {
-    background-image: url(/assets/images/phone-background.jpg);
+    background-image: url(/assets/images/phone-background.webp);
     background-position: center;
   }
 
-  #logo-header {
+  header img {
     height: 5.5svh;
   }
 
-  #nav-link {
+  header a {
     font-size: 1.3rem;
   }
 
@@ -245,16 +241,16 @@ footer a {
     height: 70svh;
   }
 
-  #welcome-name-section {
+  #name-section h3 {
     font-size: 1.6rem;
   }
 
-  #title-name-section {
+  #name-section h1 {
     font-size: 3.5rem;
   }
 
-  #logo-name-section {
-    width: 15svh;
+  #name-section img {
+    width: 28svw;
   }
 
   #icons-section {
@@ -266,16 +262,12 @@ footer a {
     font-size: 1.6rem;
   }
 
-  #icon-section {
+  #icons-section img {
     height: 13.5svh;
   }
 
   #descriptions-section {
-    background-image: url(/assets/images/phone-background-2.jpg);
-    flex-direction: column;
-  }
-
-  #article {
+    background-image: url(/assets/images/phone-background-2.webp);
     flex-direction: column;
   }
 
@@ -296,26 +288,26 @@ footer a {
     font-size: 2.2rem;
   }
 
-  #icon-social {
-    width: 7.5svh;
+  #contact-section a {
+    width: 12svw;
   }
 
-  #map {
-    width: 40svh;
+  iframe {
+    width: 70svw;
   }
 }
 
 @media (min-width: 768px) and (max-width: 1024px) {
   body {
-    background-image: url(/assets/images/phone-background.jpg);
+    background-image: url(/assets/images/phone-background.webp);
     background-position: center;
   }
 
-  #logo-header {
+  header img {
     height: 5.4svh;
   }
 
-  #nav-link {
+  header a {
     font-size: 1.7rem;
   }
 
@@ -323,11 +315,11 @@ footer a {
     height: 70svh;
   }
 
-  #welcome-name-section {
+  #name-section h3 {
     font-size: 2.5rem;
   }
 
-  #title-name-section {
+  #name-section h1 {
     font-size: 5.5rem;
   }
 
@@ -340,12 +332,12 @@ footer a {
     font-size: 2.2rem;
   }
 
-  #icon-section {
+  #icons-section img {
     height: 14svh;
   }
 
   #descriptions-section {
-    background-image: url(/assets/images/phone-background-2.jpg);
+    background-image: url(/assets/images/phone-background-2.webp);
     flex-direction: column;
   }
 
@@ -370,12 +362,12 @@ footer a {
     font-size: 2.8rem;
   }
 
-  #icon-social {
-    width: 8svh;
+  #contact-section a {
+    width: 8svw;
   }
 
-  #map {
-    width: 60svh;
+  iframe {
+    width: 70svw;
     height: 30svh;
   }
 }
